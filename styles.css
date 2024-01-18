@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Special+Elite&display=swap');
+
+* {
+    font-family: 'Special Elite';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: auto;
+    width: auto;
+    background: url(./assets/images/WhatsApp\ Image\ 2023-12-20\ at\ 19.27.40_57656b09.jpg);
+    background-repeat: inherit;
+    background-size: cover;
+    margin: 0; /* Remove default margin to make the layout full-width */
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .f {
+    margin-left: 33px; /* Adjusted to be relative to the viewport width */
+    margin-right: 33px; /* Adjusted to be relative to the viewport width */
+}
+
+.navbar a {
+    color: #bd8c28;
+    text-decoration: none;
+    padding: 6px 12px; /* Adjusted to be relative to the viewport width */
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: rgb(224, 201, 166);
+    color: #180303;
+}
+
+.navbar .search {
+    border: none;
+    background-color: rgb(224, 201, 166);
+    padding: 6px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.navbar input[type="text"]{
+    border: none;
+    background-color: rgb(224, 201, 166);
+}
+
+.navbar button {
+    background-color: #180303;
+    color: #bd8c28;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar button:hover {
+    background-color: #e0c9a6;
+    color: #180303;
+}
+
+.navbar button.signup { 
+    background-color: #ffc107; 
+    color: #180303;
+}
+
+.navbar button.signup:hover{
+    background-color: #e0c9a6;
+    color: #180303;
+}
+
+/* ... (rest of the navbar styles remain unchanged) ... */
+
+.paper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    top: 50px;
+    left: 30%; /* Adjusted to be relative to the viewport width */
+    background-repeat: no-repeat;
+    background-image: url("./assets/images/paper.png");
+    background-blend-mode: color-dodge;
+    background-size: cover;
+    transform: scale(0.9);
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 90%; /* Adjusted to be relative to the viewport width */
+    font-size: 2.5vw; /* Adjusted to be relative to the viewport width */
+    padding-top: 2%; /* Adjusted to be relative to the viewport width */
+    font-weight: bold;
+}
+
+.story {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 80%; /* Adjusted to be relative to the viewport width */
+    font-size: 1.5vw; /* Adjusted to be relative to the viewport width */
+    top: 5%; /* Adjusted to be relative to the viewport height */
+}
+
+.name {
+    position: relative;
+    top: 10%; /* Adjusted to be relative to the viewport height */
+    left: 10%; /* Adjusted to be relative to the viewport width */
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 80%; /* Adjusted to be relative to the viewport width */
+    font-size: 2vw; /* Adjusted to be relative to the viewport width */
+}
+
+#changetext {
+    position: fixed;;
+    bottom: 1%; 
+    right: 40%; 
+}
+
+.button-bottom button {
+    background-color: #180303;
+    color: #bd8c28;
+    padding: 8px 16px; /* Adjusted to be relative to the viewport width */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20%; /* Adjusted to be relative to the viewport width */
+}
+
+.button-bottom button:hover {
+    background-color: #e0c9a6;
+    color: #180303;
+}
+
+.title {
+    transition: 0.5s;
+}
+
+button:focus + .title {
+    transform: scale(1.5);
+    color: red;
+}
+
+.story {
+    transition: 0.5s;
+}
+
+button:focus + .story {
+    transform: scale(1.5);
+    color: red;
+}
